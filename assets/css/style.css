@@ -1,0 +1,236 @@
+@import url("../css/root.css");
+
+.section1 {
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.wallet-btn {
+  width: 190px;
+  height: 52px;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+/* all gap properties */
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+/* all margin properties */
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+/* position properties */
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.main-txt {
+  max-width: 889px;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.travel-info-sub-box {
+  padding: 12px 0px;
+  background-color: var(--travel-sub-box-color);
+  max-width: 930px;
+  border-radius: 16px;
+  border: 1px solid var(--travel-sub-box-border);
+  margin-top: 65px;
+  backdrop-filter: blur(10px);
+}
+
+.location-part {
+  padding: 16px 10px;
+  background-color: var(--location-color);
+  border: 1px solid var(--travel-sub-box-border);
+  border-radius: 8px;
+}
+
+.check-part {
+  padding: 4px 10px;
+}
+
+.search-btn {
+  width: 122px;
+  height: 52px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 1px;
+  border: 0.6px solid var(--color-white);
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* navbar_items */
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  gap: 10px;
+  transition-duration: 0.5s;
+  z-index: 7;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-white);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: 0.8s;
+}
+
+#bar1,
+#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
+
+@media (min-width: 576px) {
+  .travel-info-sub-box {
+    padding: 24px 40px;
+  }
+
+  .before-txt::after {
+    content: "";
+    bottom: 10px;
+    height: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    left: 4px;
+    background-image: url(../images/line.png);
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .before-txt::after {
+    content: "";
+    height: 14px;
+    bottom: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .position-lg-relative {
+    position: relative;
+  }
+
+  .bottom-lg-34 {
+    bottom: 34px;
+  }
+
+  .mt-lg-10 {
+    margin-top: 10px;
+  }
+
+  .before-txt::after {
+    content: "";
+    height: 20px;
+    bottom: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-items {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-black);
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    transition-duration: 0.5s;
+  }
+
+  .show {
+    left: 0 !important;
+  }
+}
