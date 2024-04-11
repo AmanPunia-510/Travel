@@ -18,6 +18,11 @@
   --travel-sub-box-color: #8a8ef714;
   --travel-sub-box-border: #fdfdfd66;
   --location-color: #ffffff14;
+  --p-color: #D0CFD2;
+  --hover-txt-bg: #01010140;
+  --hover-color: #fafafa;
+  --off-box: #140F40;
+  --fade-color: #8988A4;
 
   /* font-size */
   --fs-10: 10px;
@@ -45,6 +50,10 @@
   --fw-600: 600;
   --fw-700: 700;
   --fw-800: 800;
+}
+
+.body{
+  background-color: var(--body-color);
 }
 
 .ff-poppins {
@@ -159,6 +168,14 @@
 
 .body-color {
   background-color: var(--body-color);
+}
+
+.p-color{
+  color: var(--p-color);
+}
+
+.fade-color{
+  color: var(--fade-color);
 }
 
 @media (min-width: 576px) {
