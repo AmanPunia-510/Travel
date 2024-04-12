@@ -412,6 +412,27 @@ li.slick-active {
   border-left: 6px solid var(--wrap-box5);
 }
 
+.section6{
+  padding-top: 54px;
+}
+
+.slick2-txt1{
+  padding-top: 20px;
+}
+
+.pb-22{
+  padding-bottom: 22px;
+}
+
+.sec6-right{
+  bottom: -9%;
+}
+
+.sec6-left{
+  top: 25%;
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .travel-info-sub-box {
     padding: 24px 40px;
@@ -470,6 +491,10 @@ li.slick-active {
 
   .sec4-right {
     width: unset;
+  }
+
+  .sec6-left{
+    width: auto;
   }
 }
 
