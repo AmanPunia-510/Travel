@@ -307,14 +307,14 @@
   width: 28px;
   height: 12px;
   border-radius: 21px;
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 li.slick-active {
   width: 59px;
   height: 12px;
   border-radius: 21px;
-  background: #1219d2;
+  background: var(--slick-dots);
 }
 
 .slick-dots li button:before {
@@ -325,8 +325,91 @@ li.slick-active {
   bottom: -65px;
 }
 
-.sec4-right,.sec4-left {
+.sec4-right,
+.sec4-left {
   top: -33px !important;
+}
+
+.sec4-right {
+  z-index: 2;
+  width: 100%;
+}
+
+.section4 {
+  padding-bottom: 140px;
+}
+
+.section5 {
+  min-height: 840px;
+  background-image: url(../images/section5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section5::after {
+  content: "";
+  background-image: url(../images/section5-after.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.sec4-left {
+  width: 100%;
+}
+
+.blue-box {
+  max-width: 582px;
+  min-height: 480px;
+  border-radius: 20.69px;
+  background: var(--blue-box);
+  padding: 30px 50px;
+}
+
+.sec5-img {
+  max-width: 406px;
+  max-height: 406px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.wrap-box {
+  max-width: 482px;
+}
+
+.wrap-commen {
+  padding-left: 28px;
+  padding-right: 28px;
+  width: 220px;
+}
+
+.wrap-box1 {
+  border-left: 6px solid var(--wrap-box1);
+}
+
+.wrap-box2 {
+  border-left: 6px solid var(--wrap-box2);
+}
+
+.wrap-box3 {
+  border-left: 6px solid var(--wrap-box3);
+  padding-left: 28px;
+}
+
+.box-1 {
+  border-left: 6px solid var(--wrap-box4);
+}
+
+.box-2 {
+  border-left: 6px solid var(--wrap-box5);
 }
 
 @media (min-width: 576px) {
@@ -361,6 +444,13 @@ li.slick-active {
   .section3-left {
     bottom: -68px;
     left: 0;
+  }
+
+  .section2-left {
+    width: unset;
+  }
+
+  .sec4-left {
     width: unset;
   }
 }
@@ -375,6 +465,11 @@ li.slick-active {
   .section3-left {
     left: 0;
     top: 73px;
+    width: unset;
+  }
+
+  .sec4-right {
+    width: unset;
   }
 }
 
@@ -436,6 +531,15 @@ li.slick-active {
     left: 0;
     bottom: 115px;
   }
+
+  .wrap-commen {
+    margin-bottom: unset;
+  }
+
+  .wrap-box,
+  .wrap2-box {
+    overflow-x: unset;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -450,5 +554,19 @@ li.slick-active {
     right: 0;
     top: -18%;
     width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-box {
+    max-width: 302px;
+  }
+
+  .blue-box {
+    padding: 18px 0px;
+  }
+
+  .gap-32 {
+    gap: 12px;
   }
 }

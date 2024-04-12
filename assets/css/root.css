@@ -18,11 +18,19 @@
   --travel-sub-box-color: #8a8ef714;
   --travel-sub-box-border: #fdfdfd66;
   --location-color: #ffffff14;
-  --p-color: #D0CFD2;
+  --p-color: #d0cfd2;
   --hover-txt-bg: #01010140;
   --hover-color: #fafafa;
-  --off-box: #140F40;
-  --fade-color: #8988A4;
+  --off-box: #140f40;
+  --fade-color: #8988a4;
+  --color-e2: #d3d2e2;
+  --wrap-box1: #696cdf;
+  --wrap-box2: #5c368a;
+  --wrap-box3: #e76e9a;
+  --wrap-box4: #d1b35e;
+  --wrap-box5: #98dbb3;
+  --blue-box: rgba(18, 24, 210, 20%);
+  --slick-dots: #1219d2;
 
   /* font-size */
   --fs-10: 10px;
@@ -33,6 +41,7 @@
   --fs-27: 27px;
   --fs-28: 28px;
   --fs-30: 30px;
+  --fs-32: 32px;
   --fs-sm-36: 36px;
   --fs-lg-40: 40px;
   --fs-md-48: 48px;
@@ -52,7 +61,7 @@
   --fw-800: 800;
 }
 
-.body{
+.body {
   background-color: var(--body-color);
 }
 
@@ -94,6 +103,10 @@
 
 .fs-30 {
   font-size: var(--fs-30);
+}
+
+.fs-32 {
+  font-size: var(--fs-32);
 }
 
 .fs-36 {
@@ -170,12 +183,16 @@
   background-color: var(--body-color);
 }
 
-.p-color{
+.p-color {
   color: var(--p-color);
 }
 
-.fade-color{
+.fade-color {
   color: var(--fade-color);
+}
+
+.color-e2 {
+  color: var(--color-e2);
 }
 
 @media (min-width: 576px) {
