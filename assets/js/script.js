@@ -56,6 +56,46 @@ $(".slider1").slick({
   ],
 });
 
+$(".slider2").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow: false,
+  nextArrow: false,
+  responsive: [
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+      },
+    },
+  ],
+});
+
 let accordian_items = document.querySelectorAll(".accordian-box");
 
 accordian_items.forEach((items) => {

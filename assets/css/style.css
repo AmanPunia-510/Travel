@@ -27,10 +27,10 @@
 
 .button:hover {
   -webkit-transform: scale(1.2) rotate(2deg);
-      -ms-transform: scale(1.2) rotate(2deg);
-          transform: scale(1.2) rotate(2deg);
+  -ms-transform: scale(1.2) rotate(2deg);
+  transform: scale(1.2) rotate(2deg);
   -webkit-box-shadow: 1px 4px 7px var(--color-e2);
-          box-shadow: 1px 4px 7px var(--color-e2);
+  box-shadow: 1px 4px 7px var(--color-e2);
 }
 
 .location-txt {
@@ -144,7 +144,7 @@
   border: 1px solid var(--travel-sub-box-border);
   margin-top: 65px;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .location-part {
@@ -185,7 +185,7 @@
   border: 0.6px solid var(--color-white);
   -webkit-box-shadow: 0 1px 2px var(--form-group),
     inset 0px -15px 10px -12px var(--form-group);
-          box-shadow: 0 1px 2px var(--form-group),
+  box-shadow: 0 1px 2px var(--form-group),
     inset 0px -15px 10px -12px var(--form-group);
   padding: 10px;
   display: inline-block;
@@ -209,8 +209,8 @@
   border-radius: 2px;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .overflow-x-scroll {
@@ -233,8 +233,8 @@
   cursor: pointer;
   gap: 10px;
   -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   z-index: 7;
 }
 
@@ -247,8 +247,8 @@
 
 #bar2 {
   -webkit-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
 }
 
 #bar1,
@@ -259,46 +259,46 @@
 #checkbox:checked + .toggle .bars {
   position: absolute;
   -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar2 {
   -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-          transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar1 {
   width: 100%;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar3 {
   width: 100%;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
   -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle {
   -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .about-p {
@@ -328,7 +328,7 @@
 .h-460 {
   height: 460px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .brdr-rds-18 {
@@ -350,7 +350,7 @@
   background: var(--hover-txt-bg);
   color: var(--hover-color);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   opacity: 0;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -405,7 +405,7 @@
   border-radius: 42px;
   background: var(--hover-txt-bg);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   opacity: 0;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -439,11 +439,11 @@
   display: -ms-flexbox !important;
   display: flex !important;
   -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
   -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
 }
 li.slick-active {
   width: 59px;
@@ -458,6 +458,10 @@ li.slick-active {
 
 .slick-dots {
   bottom: -65px;
+}
+
+.slider2  .slick-current div .slider_item .off-box {
+  border: 1px solid var(--slider2);
 }
 
 .sec4-right,
@@ -583,7 +587,7 @@ li.slick-active {
   border-bottom: 1px solid var(--accord-bottom);
 }
 
-.last-accord{
+.last-accord {
   border-bottom: none;
 }
 
@@ -669,11 +673,11 @@ li.slick-active {
   width: 100%;
 }
 
-.footer-hover{
+.footer-hover {
   position: relative;
 }
 
-.footer-hover:hover{
+.footer-hover:hover {
   color: var(--color-white);
 }
 
@@ -688,13 +692,13 @@ li.slick-active {
 
 .commen-icon svg path {
   -webkit-animation-name: icons;
-          animation-name: icons;
+  animation-name: icons;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes icons {
@@ -803,7 +807,7 @@ li.slick-active {
   .section2-png {
     height: 691px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 
   .about-p {
@@ -844,18 +848,18 @@ li.slick-active {
     width: 100%;
     height: 100vh;
     -webkit-backdrop-filter: blur(50px);
-            backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     z-index: 5;
     -webkit-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
-            transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
   }
 
   .show {
