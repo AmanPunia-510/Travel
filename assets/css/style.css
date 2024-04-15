@@ -460,7 +460,7 @@ li.slick-active {
   bottom: -65px;
 }
 
-.slider2  .slick-current div .slider_item .off-box {
+.slider2 .slick-current div .slider_item .off-box {
   border: 1px solid var(--slider2);
 }
 
@@ -468,7 +468,14 @@ li.slick-active {
 .sec4-left {
   top: -33px !important;
 }
-
+.preloader {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
 .sec4-right {
   z-index: 2;
   width: 100%;
@@ -699,6 +706,13 @@ li.slick-active {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+.video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  filter: hue-rotate(45deg);
 }
 
 @-webkit-keyframes icons {

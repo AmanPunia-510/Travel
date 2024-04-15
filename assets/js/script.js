@@ -134,3 +134,12 @@ accordian_items.forEach((items) => {
 AOS.init({
   once: true,
 });
+
+const preloader = document.querySelector(".preloader");
+
+setTimeout(() => {
+  preloader.classList.add("d-none");
+}, 2000);
+
+let vid = document.querySelector(".video");
+vid.playbackRate = 0.5;
