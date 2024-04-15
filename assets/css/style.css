@@ -19,19 +19,39 @@
   border-radius: 60px;
   border: none;
   outline: none;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
   background-color: transparent;
 }
 
-button:hover {
-  transform: scale(1.2) rotate(2deg);
-  box-shadow: 1px 4px 7px var(--color-e2);
+.button:hover {
+  -webkit-transform: scale(1.2) rotate(2deg);
+      -ms-transform: scale(1.2) rotate(2deg);
+          transform: scale(1.2) rotate(2deg);
+  -webkit-box-shadow: 1px 4px 7px var(--color-e2);
+          box-shadow: 1px 4px 7px var(--color-e2);
 }
 
 .location-txt {
   background-color: unset;
   border: none;
   outline: none;
+}
+.location-txt::-webkit-input-placeholder {
+  color: var(--color-white);
+}
+.location-txt::-moz-placeholder {
+  color: var(--color-white);
+}
+.location-txt:-ms-input-placeholder {
+  color: var(--color-white);
+}
+.location-txt::-ms-input-placeholder {
+  color: var(--color-white);
+}
+.location-txt::placeholder {
+  color: var(--color-white);
 }
 
 .z-1 {
@@ -123,7 +143,8 @@ button:hover {
   border-radius: 16px;
   border: 1px solid var(--travel-sub-box-border);
   margin-top: 65px;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .location-part {
@@ -162,7 +183,9 @@ button:hover {
   -webkit-appearance: none;
   background-color: transparent;
   border: 0.6px solid var(--color-white);
-  box-shadow: 0 1px 2px var(--form-group),
+  -webkit-box-shadow: 0 1px 2px var(--form-group),
+    inset 0px -15px 10px -12px var(--form-group);
+          box-shadow: 0 1px 2px var(--form-group),
     inset 0px -15px 10px -12px var(--form-group);
   padding: 10px;
   display: inline-block;
@@ -185,7 +208,9 @@ button:hover {
   border: 0.6px solid var(--color-white);
   border-radius: 2px;
   border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .overflow-x-scroll {
@@ -207,7 +232,9 @@ button:hover {
   height: 40px;
   cursor: pointer;
   gap: 10px;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   z-index: 7;
 }
 
@@ -219,7 +246,9 @@ button:hover {
 }
 
 #bar2 {
-  transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 #bar1,
@@ -229,29 +258,47 @@ button:hover {
 
 #checkbox:checked + .toggle .bars {
   position: absolute;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar2 {
-  transform: scaleX(0);
-  transition-duration: 0.5s;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar1 {
   width: 100%;
-  transform: rotate(45deg);
-  transition-duration: 0.5s;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar3 {
   width: 100%;
-  transform: rotate(-45deg);
-  transition-duration: 0.5s;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle {
-  transition-duration: 0.5s;
-  transform: rotate(180deg);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .about-p {
@@ -280,7 +327,8 @@ button:hover {
 
 .h-460 {
   height: 460px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .brdr-rds-18 {
@@ -301,8 +349,11 @@ button:hover {
   border-radius: 42px;
   background: var(--hover-txt-bg);
   color: var(--hover-color);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -353,8 +404,11 @@ button:hover {
   padding: 10px 28px 10px 28px;
   border-radius: 42px;
   background: var(--hover-txt-bg);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -381,9 +435,15 @@ button:hover {
   background-color: var(--color-white);
 }
 .slider_item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
 }
 li.slick-active {
   width: 59px;
@@ -569,6 +629,8 @@ li.slick-active {
   height: 3px;
   background: var(--color-white);
   display: block;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -594,11 +656,21 @@ li.slick-active {
   height: 2px;
   width: 0%;
   background-color: var(--color-white);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 .source-list:hover::after {
   width: 100%;
+}
+
+.footer-hover{
+  position: relative;
+}
+
+.footer-hover:hover{
+  color: var(--color-white);
 }
 
 .cursor {
@@ -611,10 +683,20 @@ li.slick-active {
 }
 
 .commen-icon svg path {
-  animation-name: icons;
-  animation-duration: 1.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: icons;
+          animation-name: icons;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes icons {
+  to {
+    fill: var(--color-black);
+  }
 }
 
 @keyframes icons {
@@ -716,7 +798,8 @@ li.slick-active {
 @media (min-width: 1200px) {
   .section2-png {
     height: 691px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .about-p {
@@ -756,11 +839,19 @@ li.slick-active {
     left: -100%;
     width: 100%;
     height: 100vh;
-    backdrop-filter: blur(50px);
-    flex-direction: column;
-    justify-content: center;
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     z-index: 5;
-    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
 
   .show {

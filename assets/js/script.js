@@ -73,7 +73,7 @@ accordian_items.forEach((items) => {
         let svg = other.querySelector(".accodian-svg");
         svg.style.rotate = "0deg";
         paragraph.classList.add("d-none");
-      accordian_h.style.paddingBottom = "16px";
+        accordian_h.style.paddingBottom = "16px";
       }
     });
 
@@ -89,4 +89,8 @@ accordian_items.forEach((items) => {
       accordian_h.style.paddingBottom = "16px";
     }
   });
+});
+
+AOS.init({
+  once: true,
 });
