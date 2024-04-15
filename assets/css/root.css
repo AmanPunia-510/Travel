@@ -31,6 +31,10 @@
   --wrap-box5: #98dbb3;
   --blue-box: rgba(18, 24, 210, 20%);
   --slick-dots: #1219d2;
+  --color-b7: #B5B3B7;
+  --color-fa: #AFAFAF;
+  --form-group: rgba(0, 0, 0, 0.05);
+  --accord-bottom: #e9ebed;
 
   /* font-size */
   --fs-10: 10px;
@@ -193,6 +197,14 @@
 
 .color-e2 {
   color: var(--color-e2);
+}
+
+.color-b7{
+  color: var(--color-b7);
+}
+
+.color-fa{
+  color: var(--color-fa);
 }
 
 @media (min-width: 576px) {

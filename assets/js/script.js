@@ -22,11 +22,11 @@ $(".slider1").slick({
   slidesToScroll: 1,
   prevArrow: false,
   nextArrow: false,
-//   autoplay: true,
-//   autoplaySpeed: 1000,
+  // centerMode: true,
+  // variableWidth: true,
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 850,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -54,4 +54,39 @@ $(".slider1").slick({
       },
     },
   ],
+});
+
+let accordian_items = document.querySelectorAll(".accordian-box");
+
+accordian_items.forEach((items) => {
+  let paragraph = items.querySelector(".accordian-p");
+  let heading = items.querySelector(".accordian-heading-svg");
+  let svg = items.querySelector(".accodian-svg");
+  const accordian_h = items.querySelector(".accordian-h");
+
+  heading.style.cursor = "pointer";
+  heading.addEventListener("click", () => {
+    accordian_items.forEach((other) => {
+      if (other !== items) {
+        let paragraph = other.querySelector(".accordian-p");
+        const accordian_h = other.querySelector(".accordian-h");
+        let svg = other.querySelector(".accodian-svg");
+        svg.style.rotate = "0deg";
+        paragraph.classList.add("d-none");
+      accordian_h.style.paddingBottom = "16px";
+      }
+    });
+
+    if (paragraph.classList.contains("d-none")) {
+      paragraph.classList.remove("d-none");
+      paragraph.classList.add("d-block");
+      svg.style.rotate = "180deg";
+      accordian_h.style.paddingBottom = "0";
+    } else {
+      paragraph.classList.remove("d-block");
+      paragraph.classList.add("d-none");
+      svg.style.rotate = "0deg";
+      accordian_h.style.paddingBottom = "16px";
+    }
+  });
 });
