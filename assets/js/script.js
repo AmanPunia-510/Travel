@@ -139,7 +139,7 @@ const preloader = document.querySelector(".preloader");
 
 setTimeout(() => {
   preloader.classList.add("d-none");
-}, 2000);
+}, 3000);
 
 let vid = document.querySelector(".video");
 vid.playbackRate = 0.5;

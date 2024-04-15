@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
   margin: 0;
@@ -31,11 +32,12 @@
   --wrap-box5: #98dbb3;
   --blue-box: rgba(18, 24, 210, 20%);
   --slick-dots: #1219d2;
-  --color-b7: #B5B3B7;
-  --color-fa: #AFAFAF;
+  --color-b7: #b5b3b7;
+  --color-fa: #afafaf;
   --form-group: rgba(0, 0, 0, 0.05);
   --accord-bottom: #e9ebed;
-  --slider2: #1219D2;
+  --slider2: #1219d2;
+  --blue: #0000ff;
 
   /* font-size */
   --fs-10: 10px;
@@ -72,6 +74,10 @@
 
 .ff-poppins {
   font-family: "Poppins", sans-serif;
+}
+
+.ff-plat {
+  font-family: "Platypi", serif;
 }
 
 .ff-racing {
@@ -200,11 +206,11 @@
   color: var(--color-e2);
 }
 
-.color-b7{
+.color-b7 {
   color: var(--color-b7);
 }
 
-.color-fa{
+.color-fa {
   color: var(--color-fa);
 }
 
