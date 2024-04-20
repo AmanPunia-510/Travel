@@ -232,18 +232,22 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div
-                                                class="one-room-traveler d-flex align-items-center justify-content-between pb-10">
-                                                <div class="traveler-txt fw-400 fs-14 lh-150 ff-poppins color-white">1
-                                                    room,
-                                                    2 travelers</div>
-                                                <div class="traveler-svg">
-                                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 0.5L5 4.5L9 0.5" stroke="white" />
-                                                    </svg>
-                                                </div>
-                                            </div>
+                                                <form action="/action_page.php" class="one-room-traveler d-flex align-items-center justify-content-between pb-10">
+                                                    <select name="cars" class="select traveler-txt fw-400 fs-14 lh-150 ff-poppins color-white">
+                                                        <option value="volvo"
+                                                            class="traveler-txt fw-400 fs-14 lh-150 ff-poppins color-black">
+                                                            1 room, 2 travelers</option>
+                                                        <option value="saab"
+                                                            class="traveler-txt fw-400 fs-14 lh-150 ff-poppins color-black">
+                                                            1 room, 3 travelers</option>
+                                                        <option value="opel"
+                                                            class="traveler-txt fw-400 fs-14 lh-150 ff-poppins color-black">
+                                                            1 room, 4 travelers</option>
+                                                        <option value="audi"
+                                                            class="traveler-txt fw-400 fs-14 lh-150 ff-poppins color-black">
+                                                            1 room, 5 travelers</option>
+                                                    </select>
+                                                </form>
                                         </div>
                                     </div>
                                 </div>
@@ -376,7 +380,7 @@
         </section>
 
         <section class="section4 position-relative">
-            <div class="container_slider position-relative z-3">
+            <div class="container position-relative z-3">
                 <div class="popular ff-poppins color-white fw-400 fs-48 lh-150 text-center pt-160 pb-5">Member Deals
                 </div>
                 <div class="slider1">
@@ -572,32 +576,32 @@
         </section>
 
         <section class="section6 position-relative">
-            <div class="container_slider position-relative z-3">
+            <div class="container position-relative z-3">
                 <div class="popular ff-poppins color-white fw-400 fs-48 lh-150 text-center pb-5">Meet Our Team</div>
                 <div class="slider2">
                     <div class="slider_item" data-aos-once=“true” data-aos-duration="1500" data-aos="zoom-out-right">
-                        <div class="off-box">
+                        <div class="off-box1">
                             <img src="./assets/images/slick2-img1.png" alt="off-box1" class="img-box1 w-100 brx-13">
                             <div class="slick2-txt1 fw-400 fs-24 lh-150 color-white px-4">Darlene Robertson</div>
                             <div class="fw-400 fs-16 lh-150 color-e2 pb-22 px-4">CEO & Founder</div>
                         </div>
                     </div>
                     <div class="slider_item" data-aos-once=“true” data-aos-duration="1500" data-aos="zoom-in">
-                        <div class="off-box">
+                        <div class="off-box1">
                             <img src="./assets/images/slick2-img2.png" alt="off-box1" class="img-box1 w-100 brx-13">
                             <div class="slick2-txt1 fw-400 fs-24 lh-150 color-white px-4">Cameron Williamson</div>
                             <div class="fw-400 fs-16 lh-150 color-e2 pb-22 px-4">CEO & Founder</div>
                         </div>
                     </div>
                     <div class="slider_item" data-aos-once=“true” data-aos-duration="1500" data-aos="zoom-out-left">
-                        <div class="off-box">
+                        <div class="off-box1">
                             <img src="./assets/images/slick3-img3.png" alt="off-box1" class="img-box1 w-100 brx-13">
                             <div class="slick2-txt1 fw-400 fs-24 lh-150 color-white px-4">Brooklyn Simmons</div>
                             <div class="fw-400 fs-16 lh-150 color-e2 pb-22 px-4">CEO & Founder</div>
                         </div>
                     </div>
                     <div class="slider_item">
-                        <div class="off-box">
+                        <div class="off-box1">
                             <img src="./assets/images/slick3-img3.png" alt="off-box1" class="img-box1 w-100 brx-13">
                             <div class="slick2-txt1 fw-400 fs-24 lh-150 color-white px-4">Darlene Robertson</div>
                             <div class="fw-400 fs-16 lh-150 color-e2 pb-22 px-4">CEO & Founder</div>
@@ -743,15 +747,21 @@
                                 </li>
                             </div>
                             <div class="col-6 col-md-5 d-flex justify-content-center">
-                                <div class="footer-box">
+                                <div class="">
                                     <li class="fw-400 fs-16 lh-150 ff-poppins color-white pb-18">Contact Us</li>
-                                    <address class="under-li-footer fw-400 fs-16 lh-150 color-fa ff-poppins pb-18 m-0">
-                                        4517
-                                        Washington
-                                        Ave.
-                                        Manchester, Kentucky 39495</address>
-                                    <address class="fw-400 fs-16 lh-150 color-fa ff-poppins m-0">+123 456 7890, +123 456
-                                        7890
+                                    <address>
+                                        <a href="#"
+                                            class="text-decoration-none under-li-footer fw-400 fs-16 lh-150 color-fa ff-poppins pb-18 m-0 footer-hover">4517
+                                            Washington
+                                            Ave.
+                                            Manchester, Kentucky 39495</a>
+                                    </address>
+                                    <address>
+                                        <a href="#"
+                                            class="text-decoration-none fw-400 fs-16 lh-150 color-fa ff-poppins m-0 footer-hover">
+                                            +123 456 7890, +123 456
+                                            7890
+                                        </a>
                                     </address>
                                 </div>
                             </div>

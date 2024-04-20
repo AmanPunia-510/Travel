@@ -381,7 +381,12 @@
 .off-box {
   background-color: var(--off-box);
   border-radius: 13px;
-  max-width: 367px !important;
+  cursor: pointer;
+}
+
+.off-box1 {
+  background-color: var(--off-box);
+  border-radius: 13px;
   cursor: pointer;
 }
 
@@ -428,39 +433,31 @@
   margin-right: -10px;
 }
 
-.slick-dots li {
+.slider1 .slick-dots li {
   width: 28px;
   height: 12px;
   border-radius: 21px;
   background-color: var(--color-white);
 }
-.slider_item {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: center !important;
-  -ms-flex-align: center !important;
-  align-items: center !important;
-  -webkit-box-pack: center !important;
-  -ms-flex-pack: center !important;
-  justify-content: center !important;
-}
-li.slick-active {
+
+.slider1 li.slick-active {
   width: 59px;
   height: 12px;
   border-radius: 21px;
   background: var(--slick-dots);
 }
 
-.slick-dots li button:before {
+.slider1 .slick-dots li button:before {
   font-size: unset;
 }
 
-.slick-dots {
+.slider1 .slick-dots {
   bottom: -65px;
 }
 
-.slider2 .slick-current div .slider_item .off-box {
+/* slider 2 */
+
+.slider2 .slick-current div .slider_item .off-box1 {
   border: 1px solid var(--slider2);
 }
 
@@ -471,7 +468,7 @@ li.slick-active {
 .preloader {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: var(--color-black);
   top: 0;
   right: 0;
   z-index: 10;
@@ -600,7 +597,7 @@ li.slick-active {
 
 .accordian-h,
 .accordian-p {
-  max-width: 561px;
+  max-width: 694px;
 }
 
 .accordian-h {
@@ -724,16 +721,10 @@ li.slick-active {
   text-shadow: 0px 0px 15px var(--blue);
 }
 
-@-webkit-keyframes icons {
-  to {
-    fill: var(--color-black);
-  }
-}
-
-@keyframes icons {
-  to {
-    fill: var(--color-black);
-  }
+.select {
+  background: transparent;
+  border: none;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -823,6 +814,10 @@ li.slick-active {
   .section3-left {
     left: 0;
     top: -83px;
+  }
+
+  .accordian {
+    width: 748px;
   }
 }
 

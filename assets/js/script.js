@@ -22,8 +22,6 @@ $(".slider1").slick({
   slidesToScroll: 1,
   prevArrow: false,
   nextArrow: false,
-  // centerMode: true,
-  // variableWidth: true,
   responsive: [
     {
       breakpoint: 850,
@@ -57,13 +55,15 @@ $(".slider1").slick({
 });
 
 $(".slider2").slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
   prevArrow: false,
   nextArrow: false,
+  centerMode: true,
+  centerPadding: "0",
   responsive: [
     {
       breakpoint: 850,
